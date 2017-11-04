@@ -1,14 +1,12 @@
 {
   "name": "language-honstr",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "HoN Strings Syntax Highlighter",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/nepobedimych/language-honstr",
   "license": "MIT",
   "engines": {
     "atom": "*"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
