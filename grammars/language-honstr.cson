@@ -1,0 +1,44 @@
+'scopeName': 'source.str'
+'name': 'HoN Strings'
+'fileTypes': ['str']
+
+'patterns': [
+    {
+        'begin': '^'
+        'end': '$'
+        'name': 'string'
+        'patterns': [
+            {
+                'name': 'comment'
+                'match': '^\\s*(//.*)$'
+            }
+            {
+                'match': '^\\s*([^/\\s][^\\s]*)'
+                'name': 'keyword'
+            }
+            {
+                'match': '\\\\n'
+                'name': 'constant.character.escape.newline'
+            }
+            {
+                'match': '\\^([a-z]|\\d{3}|\\*)'
+                'name': 'constant.honstr'
+            }
+            {
+                'match': '\\d|%'
+                'name': 'variable.honstr'
+            }
+            {
+                'begin': '\\{'
+                'end': '\\}'
+                'name': 'constant.character.escape.honstr'
+                'patterns': [
+                    {
+                        'match': '[^,]'
+                        'name': 'variable'
+                    }
+                ]
+            }
+        ]
+    }
+]
